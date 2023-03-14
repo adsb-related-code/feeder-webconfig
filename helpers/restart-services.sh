@@ -11,7 +11,7 @@ systemctl restart webconfig
 
 adsbx-first-run
 
-services="readsb dump978-fa adsbexchange-978 adsbexchange-feed adsbexchange-mlat webconfig leds"
+services="readsb dump978-fa adsbfi-978 adsbfi-feed adsbfi-mlat webconfig leds"
 for service in $services; do
     restartIfEnabled $service
 done
