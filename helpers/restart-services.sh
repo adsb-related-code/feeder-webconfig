@@ -15,5 +15,3 @@ services="readsb dump978-fa adsbfi-978 adsbfi-feed adsbfi-mlat webconfig leds"
 for service in $services; do
     restartIfEnabled $service
 done
-
-systemctl start adsbx-zt-enable
