@@ -31,7 +31,7 @@ for dir in /etc/php/*; do
     echo -e "; Put session info here, to prevent SD card writes\nsession.save_path = \"/tmp\"" > "$dir/cgi/conf.d/30-session_path.ini" || true
 done
 
-ipath=/adsbexchange/webconfig
+ipath=/adsbfi/webconfig
 
 mkdir -p $ipath
 cp adsbfi-config.txt.webtemplate webconfig.sh leds.sh sanitize-uuid.sh $ipath
